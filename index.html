@@ -4,36 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Crystal Collector</title>
+    <title>Rupee Collector</title>
 </head>
 <body>
-    <h1>Crystal Collector!</h1>
+    <h1>Rupee Collector!</h1>
+<div class="container">
+<div class="row">
+    <div class="col-lg-6">
     <div id="instructions">
         <p>You will be given a random number at the start of the game.</p>
-        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+        <p>There are four rupees to the right. By clicking on a rupee you will add a specific amount of points to your total score.</p>
         <p>You win the game by matching your total score to the random number, and you lose the game if your total score goes above the random number.</p>
-        <p>The value of each crystal is hidden from you until you click on it.</p>
-        <p>Each time when the game starts the value of each crystal will change.</p>
+        <p>The value of each rupee is hidden from you until you click on it.</p>
+        <p>Each time the game starts, the value of each rupee will change.</p>
     </div>
-
+    </div>
+    <div class="col-lg-1.5">
     <div id="randomNumber"></div>
+    </div>
+    <div class="col-lg-1.5">
     <div id="score">
         <p id="wins"></p>
         <p id="losses"></p>
     </div>
-
-    <div id="crystals">
-        <img class="crystals" id="greenRupee" src="https://vignette.wikia.nocookie.net/zeldafanon/images/5/57/GreenRupee.png/revision/latest?cb=20120501010031" alt="GreenRupee">
-        <img class="crystals clearRupees" id="blueRupee" src="https://78.media.tumblr.com/6b6b9ec11deb1caf3be412b82bbb38a0/tumblr_muumdrJ9uW1qa9dqwo1_400.png" alt="BlueRupee">
-        <img class="crystals clearRupees" id="purpleRupee" src="https://vignette.wikia.nocookie.net/zeldafanon/images/4/43/PurpleRupee.png/revision/latest?cb=20120501010515" alt="PurpleRupee">
-        <img class="crystals clearRupees" id="silverRupee" src="https://vignette.wikia.nocookie.net/zeldafanon/images/8/84/SilverRupee.png/revision/latest?cb=20120501010531" alt="SilverRupee">
     </div>
-
-    <div id="totalScore">Your total score is:</div>
-    <div id="counter"></div>
-
+    <div class="col-lg-2">
+    <div id="totalScore">Your total rupees:
+        <div id="counter"></div>
+    </div>
+    </div>
+    <div class="col-lg-12">
+    <div id="rupees">
+        <img class="crystals" id="greenRupee" data-rupee="green" src="assets/images/GreenRupee.png" alt="GreenRupee">
+        <img class="crystals" id="blueRupee" data-rupee="blue" src="assets/images/BlueRupee.png" alt="BlueRupee">
+        <img class="crystals" id="purpleRupee" data-rupee="purple" src="assets/images/PurpleRupee.png" alt="PurpleRupee">
+        <img class="crystals" id="silverRupee" data-rupee="silver" src="assets/images/SilverRupee.png" alt="SilverRupee">
+    </div>
+    </div>
+</div>
+</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>
 </body>

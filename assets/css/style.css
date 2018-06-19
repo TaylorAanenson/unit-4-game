@@ -3,67 +3,71 @@ body {
     background-size: 100%;
 }
 h1 {
+    text-align: center;
     font-size: 50px;
-    background-color: orange;
-    color: white;
-    width: 25%;
+    background-color: #43c3dc;
+    color: #6b34ab;
     padding: 20px 0px;
     margin: 10px;
 }
 #instructions {
-    background-color: tan;
-    color: green;
-    height: 350px;
-    width: 33%;
+    background-color: #2e8b31;
+    color: #dae1ea;
+    width: 480px;
     font-size: 20px;
-    margin-left: 10px;
-    padding-top: 10px;
+    padding: 10px;
 }
 p {
+    font-size: 30px;
+    text-align: center;
     margin-top: 20px;
-    line-height: 20px;
+    line-height: 30px;
 }
 #randomNumber {
-    color: purple;
-    font-size: 50px;
-    float: left;
+    text-align: center;
+    color: #2fb9e6;
+    font-size: 80px;
     background-color: #fdd421;
-    height: 100px;
-    width: 150px;
+    width: 130px;
     margin: 10px;
-    padding: 20px 0px 0px 20px;
 }
 #score {
-    float: left;
     background-color: #b5c4d5;
+    color: #3aab25;
     height: 120px;
-    width: 100px;
-    margin-top: 10px;
-    padding: 0px 0px 0px 10px;
-}
-.crystals {
-    float: left;
-    clear: both;
-    height: 150px;
-    width: 100px;
-    margin-left: 10px;
-}
-.clearRupees {
-    clear: none;
-}
-#totalScore {
-    float: left;
-    clear: both;
-    background-color: teal;
-    height: 20px;
     width: 200px;
     margin: 10px;
 }
+#wins {
+    font-size: 40px;
+    margin-top: 0px;
+    line-height: 70px;
+}
+#losses {
+    font-size: 40px;
+    margin-top: 0px;
+    line-height: 0px;
+}
+#rupees {
+    margin-left: 654px;
+    margin-top: -450px;
+}
+.crystals {
+    width: 140px;
+    margin: 12px;
+    height: 210px;
+}
+#totalScore {
+    font-size: 20px;
+    background-color: #5bb947;
+    color: #fdd421;
+    margin: 10px;
+    margin-left: -5px;
+    width: 152px;
+}
 #counter {
-    float: left;
-    clear: both;
-    background-color: teal;
-    height: 150px;
-    width: 200px;
-    margin-left: 10px;
+    text-align: center;
+    background-color: #5bb947;
+    color: #fdd421;
+    font-size: 60px;
 }
