@@ -13,7 +13,7 @@ $('#wins').text('Wins: ' + wins);
 $('#losses').text('Losses: ' + losses);
 $('#counter').text(counter);
 
-$('.crystals').click(function(){
+$('.rupees').click(function(){
     var rupee = $(this).data('rupee');
     if (rupee == 'green'){
         counter+=greenRupeeNum;
