@@ -9,6 +9,18 @@ h1 {
     color: #6b34ab;
     padding: 20px 0px;
 }
+#container1 {
+    width: 50%;
+    float: left;
+}
+#container2 {
+    width: 50%;
+    float: right;
+}
+#instructionsRow {
+    margin: auto;
+    width: 480px;
+}
 #instructions {
     background-color: #2e8b31;
     color: #dae1ea;
@@ -33,7 +45,6 @@ p {
 #scoreBoard {
     background-color: #b5c4d5;
     color: #3aab25;
-    height: 120px;
     width: 200px;
     margin: 10px;
 }
@@ -50,8 +61,7 @@ p {
     background-color: #5bb947;
     color: #fdd421;
     margin: 10px;
-    margin-left: -5px;
-    width: 152px;
+
 }
 #counter {
     text-align: center;
@@ -59,12 +69,59 @@ p {
     color: #fdd421;
     font-size: 60px;
 }
+#scoreRow {
+    margin: auto;
+    width: 542px;
+}
+#rupeeRow {
+    width: 350px;
+    margin: auto;
+}
 #rupees {
-    margin-left: 654px;
-    margin-top: -460px;
+    width: 333px;
 }
 .rupees {
     width: 140px;
     margin: 12px;
     height: 210px;
+}
+@media screen and (max-width: 1045px){
+    #rupeeRow {
+        width: 324px;
+    }
+}
+@media screen and (max-width: 1000px){
+    #rupeeRow {
+        width: 305px;
+    }
+}
+@media screen and (max-width: 980px){
+    #rupeeRow {
+        width: 295px;
+    }
+}
+@media screen and (max-width: 950px){
+    #container1 {
+        width: 100%;
+        float: none;
+    }
+    #container2 {
+        width: 100%;
+        float: none;
+    }
+    #rupeeRow {
+        width: 345px;
+    }
+}
+@media screen and (max-width: 550px){
+    h1 {
+        width: 545px;
+    }
+    #container1 {
+        width: 545px;
+        float: none;
+    }
+    #rupeeRow {
+        width: 48%;
+    }
 }
